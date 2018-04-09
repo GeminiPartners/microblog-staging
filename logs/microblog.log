@@ -1,0 +1,28 @@
+2018-04-07 18:26:01,716 INFO: Microblog startup [in C:\microblog-staging\app\__init__.py:42]
+2018-04-07 18:35:53,743 INFO: Microblog startup [in C:\microblog-staging\app\__init__.py:42]
+2018-04-07 18:36:21,036 ERROR: Exception on /edit_profile [GET] [in c:\microblog-staging\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\microblog-staging\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\microblog-staging\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\microblog-staging\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\microblog-staging\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\microblog-staging\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\microblog-staging\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\microblog-staging\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\microblog-staging\app\routes.py", line 70, in edit_profile
+    form = EditProfileForm()
+  File "c:\microblog-staging\venv\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2018-04-07 22:10:54,713 INFO: Microblog startup [in C:\microblog-staging\app\__init__.py:42]
+2018-04-07 22:12:01,482 INFO: Microblog startup [in C:\microblog-staging\app\__init__.py:42]
+2018-04-08 08:13:59,600 INFO: Microblog startup [in C:\microblog-staging\app\__init__.py:42]
+2018-04-08 08:15:44,292 INFO: Microblog startup [in C:\microblog-staging\app\__init__.py:44]
+2018-04-08 08:24:42,147 INFO: Microblog startup [in C:\microblog-staging\app\__init__.py:44]
